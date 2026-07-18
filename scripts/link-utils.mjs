@@ -26,7 +26,9 @@ export function extractLocalReferences(content) {
   return matches
     .map((match) => match[1])
     .filter(Boolean)
-    .filter((value) => !/^(?:https?:|mailto:|tel:|javascript:|data:)/i.test(value));
+    .filter((value) => !/^(?:https?:|mailto:|tel:|javascript:|data:)/i.test(value))
+    // 构建时才注入的站点域名占位符，源码阶段不校验
+    .filter((value) => !value.includes("__SITE_URL__"));
 }
 
 function escapeRegExp(value) {

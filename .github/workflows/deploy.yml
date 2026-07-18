@@ -1,0 +1,61 @@
+name: Deploy — GitHub Pages + Cloudflare Pages
+
+# 推送到 main 即构建并同时发布到 GitHub Pages 与 Cloudflare Pages。
+# 构建时把 __SITE_URL__ 注入为唯一主域名（SITE_URL），使 canonical/og/sitemap 全部指向自有域名，
+# github.io 与 pages.dev 作为镜像收敛权重，避免重复内容稀释收录。
+# 所有凭据来自 GitHub Secrets，工作流文件不含任何明文密钥。
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: deploy-pages-cf
+  cancel-in-progress: true
+
+env:
+  SITE_URL: https://755799.xyz          # 唯一主域名（改域名只需改这一处 / 或设为仓库变量）
+  CF_PROJECT: ai-subscription-guide      # Cloudflare Pages 项目名
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 安装 Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 构建 dist（注入主域名）
+        run: SITE_URL="${SITE_URL}" node scripts/build.mjs
+
+      - name: 上传 GitHub Pages 构建产物
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: 发布到 Cloudflare Pages
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx --yes wrangler@latest pages deploy dist --project-name="${CF_PROJECT}" --branch=main --commit-dirty=true
+
+  deploy-pages:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 部署到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
