@@ -20,7 +20,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  SITE_URL: https://755799.xyz          # 唯一主域名（改域名只需改这一处 / 或设为仓库变量）
+  SITE_URL: https://555735.xyz          # 唯一主域名（改域名只需改这一处 / 或设为仓库变量）
   CF_PROJECT: ai-subscription-guide      # Cloudflare Pages 项目名
 
 jobs:

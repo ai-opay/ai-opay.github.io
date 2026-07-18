@@ -238,14 +238,16 @@ a {
   color: var(--brand-600);
 }
 
-/* 首页 hero 标题：关键词较长，收敛字号并让第二行成为更小的副标题，避免过大过乱 */
-.hero h1 {
+/* 首页与攻略页大标题统一：关键词较长，收敛字号并让第二行成为更小的副标题，避免过大过乱 */
+.hero h1,
+.page-hero h1 {
   font-size: clamp(2rem, 4.4vw, 3.4rem);
   line-height: 1.14;
   letter-spacing: -.02em;
   margin: 1rem 0 1.05rem;
 }
-.hero h1 span {
+.hero h1 span,
+.page-hero h1 span {
   display: block;
   margin-top: .5rem;
   font-size: .56em;
@@ -891,7 +893,6 @@ a {
 
 .page-hero h1 {
   max-width: 58rem;
-  font-size: clamp(3rem, 6vw, 5.3rem);
 }
 
 .guide-layout {
@@ -1112,11 +1113,9 @@ a {
     grid-template-columns: 1fr;
   }
 
-  .hero h1 {
-    letter-spacing: -.02em;
-  }
+  .hero h1,
   .page-hero h1 {
-    letter-spacing: -.06em;
+    letter-spacing: -.02em;
   }
 
   .route-stage {
@@ -1188,7 +1187,8 @@ a {
     gap: 1.5rem;
   }
 
-  .hero h1 {
+  .hero h1,
+  .page-hero h1 {
     font-size: clamp(1.8rem, 7.5vw, 2.6rem);
   }
 
