@@ -33,7 +33,7 @@ jobs:
       - name: 安装 Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - name: 构建 dist（注入主域名）
         run: SITE_URL="${SITE_URL}" node scripts/build.mjs
