@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0878ce">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="页面没有找到，请返回彼岸花 AI 订阅指南。">
+  <title>页面没有找到｜彼岸花 AI 订阅指南</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <style>
+    :root { font-family: "HarmonyOS Sans SC", "Microsoft YaHei", sans-serif; color: #13254a; background: #eef7ff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: radial-gradient(circle at 75% 15%, #dff4ff, transparent 22rem), linear-gradient(145deg, #f8fbff, #eef7ff); }
+    main { display: grid; min-height: 100vh; place-items: center; padding: 1.25rem; text-align: center; }
+    .code { margin: 0; color: #0878ce; font-size: clamp(6rem, 24vw, 13rem); font-weight: 950; line-height: .8; letter-spacing: -.09em; }
+    h1 { margin: 1.5rem 0 .5rem; font-size: clamp(1.8rem, 6vw, 3rem); }
+    p { color: #526e8a; }
+    .actions { display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem; margin-top: 1.5rem; }
+    button, a { min-height: 3rem; padding: .75rem 1.15rem; border: 1px solid #b9d2e8; border-radius: .9rem; color: #075aa7; background: #fff; font: inherit; font-weight: 850; text-decoration: none; cursor: pointer; }
+    button { border-color: transparent; color: #fff; background: linear-gradient(100deg, #075aa7, #00a8de); }
+    :focus-visible { outline: .2rem solid #f5b544; outline-offset: .2rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <div>
+      <p class="code">404</p>
+      <h1>这条路线暂时走不通</h1>
+      <p>返回上一页重新选择，或直接前往商城查看实时商品。</p>
+      <div class="actions"><button type="button" data-back>返回上一页</button><a href="https://shop.rtxk.us" rel="noopener noreferrer nofollow sponsored">进入商城 ↗</a></div>
+    </div>
+  </main>
+  <script>
+    document.querySelector("[data-back]").addEventListener("click", function () {
+      if (document.referrer && new URL(document.referrer).origin === location.origin) history.back();
+      else location.href = "https://shop.rtxk.us";
+    });
+  </script>
+</body>
+</html>

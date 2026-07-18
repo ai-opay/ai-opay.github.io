@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">彼岸花 AI 订阅指南</title>
+  <desc id="desc">Gemini、ChatGPT、Claude 充值与成品账号购买前指南</desc>
+  <defs>
+    <linearGradient id="bg" x1="80" y1="40" x2="1110" y2="610" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#eef6ff"/>
+      <stop offset=".58" stop-color="#e7fbff"/>
+      <stop offset="1" stop-color="#fff2d8"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#075aa7"/>
+      <stop offset="1" stop-color="#00a8de"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#185797" flood-opacity=".16"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" rx="38" fill="url(#bg)"/>
+  <g fill="#075aa7" opacity=".11">
+    <circle cx="1080" cy="88" r="175"/>
+    <circle cx="1080" cy="88" r="96" fill="#fff"/>
+    <circle cx="102" cy="570" r="116"/>
+  </g>
+  <g opacity=".17" fill="#075aa7">
+    <circle cx="70" cy="80" r="3"/><circle cx="146" cy="105" r="3"/><circle cx="110" cy="165" r="3"/>
+    <circle cx="966" cy="500" r="3"/><circle cx="1040" cy="550" r="3"/><circle cx="1120" cy="480" r="3"/>
+  </g>
+  <g font-family="Microsoft YaHei, PingFang SC, sans-serif">
+    <g transform="translate(72 62)">
+      <rect width="54" height="54" rx="18" fill="url(#brand)"/>
+      <text x="27" y="36" text-anchor="middle" fill="#fff" font-size="24" font-weight="900">花</text>
+      <text x="70" y="24" fill="#13254a" font-size="24" font-weight="900">彼岸花网络</text>
+      <text x="70" y="47" fill="#70859c" font-size="13" font-weight="700" letter-spacing="2">AI 订阅指南</text>
+    </g>
+    <g transform="translate(72 178)">
+      <rect width="234" height="34" rx="17" fill="#fff" stroke="#b9d2e8"/>
+      <circle cx="18" cy="17" r="5" fill="#0c806e"/>
+      <text x="32" y="22" fill="#075aa7" font-size="13" font-weight="800">2026 购买前决策指南</text>
+      <text x="0" y="105" fill="#0d1d3b" font-size="62" font-weight="900" letter-spacing="-4">先选对，</text>
+      <text x="0" y="175" fill="#0878ce" font-size="62" font-weight="900" letter-spacing="-4">再下单。</text>
+      <text x="2" y="222" fill="#526e8a" font-size="20">Gemini · ChatGPT · Claude</text>
+      <text x="2" y="255" fill="#70859c" font-size="16">代充值、成品账号与订阅档位，一次讲清楚</text>
+    </g>
+    <g transform="translate(690 92)" filter="url(#shadow)">
+      <ellipse cx="225" cy="225" rx="206" ry="152" fill="none" stroke="#0878ce" stroke-opacity=".18" stroke-width="2" transform="rotate(-12 225 225)"/>
+      <ellipse cx="225" cy="225" rx="142" ry="106" fill="none" stroke="#00a8de" stroke-opacity=".2" stroke-width="2" stroke-dasharray="8 10" transform="rotate(18 225 225)"/>
+      <g transform="translate(151 151) rotate(3 74 74)">
+        <rect width="148" height="148" rx="34" fill="url(#brand)"/>
+        <text x="74" y="66" text-anchor="middle" fill="#fff" font-size="23" font-weight="900">先看懂</text>
+        <text x="74" y="95" text-anchor="middle" fill="#fff" font-size="23" font-weight="900">再选择</text>
+        <text x="74" y="121" text-anchor="middle" fill="#bfefff" font-size="11">从真实场景出发</text>
+      </g>
+      <g transform="translate(0 15) rotate(-4 90 52)">
+        <rect width="180" height="104" rx="20" fill="#fff" stroke="#d8e6f4"/>
+        <rect x="18" y="18" width="44" height="7" rx="4" fill="#2779e7"/>
+        <text x="18" y="53" fill="#13254a" font-size="19" font-weight="900">Gemini</text>
+        <text x="18" y="78" fill="#70859c" font-size="11">Google 生态 · 多模态</text>
+      </g>
+      <g transform="translate(292 56) rotate(4 90 52)">
+        <rect width="180" height="104" rx="20" fill="#fff" stroke="#d8e6f4"/>
+        <rect x="18" y="18" width="44" height="7" rx="4" fill="#0aa584"/>
+        <text x="18" y="53" fill="#13254a" font-size="19" font-weight="900">ChatGPT</text>
+        <text x="18" y="78" fill="#70859c" font-size="11">通用工作 · Codex</text>
+      </g>
+      <g transform="translate(55 352) rotate(2 90 52)">
+        <rect width="180" height="104" rx="20" fill="#fff" stroke="#d8e6f4"/>
+        <rect x="18" y="18" width="44" height="7" rx="4" fill="#d56d3d"/>
+        <text x="18" y="53" fill="#13254a" font-size="19" font-weight="900">Claude</text>
+        <text x="18" y="78" fill="#70859c" font-size="11">代码 · 长文本</text>
+      </g>
+    </g>
+  </g>
+</svg>

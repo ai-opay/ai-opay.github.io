@@ -1,0 +1,7 @@
+.superpowers/
+work/
+outputs/
+node_modules/
+.screenshots/
+*.log
+docs/

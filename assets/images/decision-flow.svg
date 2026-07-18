@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">AI 订阅选择路径</title>
+  <desc id="desc">已有账号选择代充值，没有账号选择成品账号，不确定产品时使用选择器</desc>
+  <defs>
+    <linearGradient id="flow-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f6faff"/><stop offset="1" stop-color="#eaf8ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="560" rx="32" fill="url(#flow-bg)"/>
+  <g font-family="Microsoft YaHei, PingFang SC, sans-serif">
+    <text x="64" y="72" fill="#13254a" font-size="31" font-weight="900">一分钟选择路径</text>
+    <text x="64" y="105" fill="#70859c" font-size="15">先看账号状态，再看产品场景；每一步只回答一个问题。</text>
+    <g transform="translate(64 158)">
+      <rect width="236" height="290" rx="24" fill="#fff" stroke="#d8e6f4" stroke-width="2"/>
+      <circle cx="46" cy="46" r="22" fill="#dff4ff"/>
+      <text x="46" y="53" text-anchor="middle" fill="#075aa7" font-size="18" font-weight="900">1</text>
+      <text x="28" y="104" fill="#13254a" font-size="22" font-weight="900">我已有账号</text>
+      <text x="28" y="140" fill="#526e8a" font-size="14">希望保留历史记录</text>
+      <text x="28" y="166" fill="#526e8a" font-size="14">和个人设置</text>
+      <rect x="28" y="211" width="180" height="48" rx="14" fill="#075aa7"/>
+      <text x="118" y="242" text-anchor="middle" fill="#fff" font-size="16" font-weight="800">优先看代充值</text>
+    </g>
+    <path d="M312 303H355" stroke="#9fc3e2" stroke-width="3" stroke-linecap="round"/>
+    <path d="m346 294 10 9-10 9" fill="none" stroke="#9fc3e2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <g transform="translate(368 158)">
+      <rect width="236" height="290" rx="24" fill="#fff" stroke="#d8e6f4" stroke-width="2"/>
+      <circle cx="46" cy="46" r="22" fill="#e6faf5"/>
+      <text x="46" y="53" text-anchor="middle" fill="#0c806e" font-size="18" font-weight="900">2</text>
+      <text x="28" y="104" fill="#13254a" font-size="22" font-weight="900">我没有账号</text>
+      <text x="28" y="140" fill="#526e8a" font-size="14">希望减少注册步骤</text>
+      <text x="28" y="166" fill="#526e8a" font-size="14">拿到后尽快验证</text>
+      <rect x="28" y="211" width="180" height="48" rx="14" fill="#0c806e"/>
+      <text x="118" y="242" text-anchor="middle" fill="#fff" font-size="16" font-weight="800">了解成品账号</text>
+    </g>
+    <path d="M616 303H659" stroke="#9fc3e2" stroke-width="3" stroke-linecap="round"/>
+    <path d="m650 294 10 9-10 9" fill="none" stroke="#9fc3e2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <g transform="translate(672 158)">
+      <rect width="464" height="290" rx="24" fill="#0d315d"/>
+      <circle cx="48" cy="46" r="22" fill="#164b7c"/>
+      <text x="48" y="53" text-anchor="middle" fill="#94dfff" font-size="18" font-weight="900">3</text>
+      <text x="30" y="104" fill="#fff" font-size="22" font-weight="900">再按主要使用场景选产品</text>
+      <g transform="translate(30 132)">
+        <rect width="126" height="106" rx="17" fill="#164b7c"/>
+        <text x="16" y="36" fill="#fff" font-size="16" font-weight="900">Gemini</text>
+        <text x="16" y="63" fill="#b8d1e8" font-size="11">Google 生态</text>
+        <text x="16" y="83" fill="#b8d1e8" font-size="11">多模态</text>
+      </g>
+      <g transform="translate(169 132)">
+        <rect width="126" height="106" rx="17" fill="#164b7c"/>
+        <text x="16" y="36" fill="#fff" font-size="16" font-weight="900">ChatGPT</text>
+        <text x="16" y="63" fill="#b8d1e8" font-size="11">通用工作</text>
+        <text x="16" y="83" fill="#b8d1e8" font-size="11">图像与 Codex</text>
+      </g>
+      <g transform="translate(308 132)">
+        <rect width="126" height="106" rx="17" fill="#164b7c"/>
+        <text x="16" y="36" fill="#fff" font-size="16" font-weight="900">Claude</text>
+        <text x="16" y="63" fill="#b8d1e8" font-size="11">代码与长文本</text>
+        <text x="16" y="83" fill="#b8d1e8" font-size="11">Claude Code</text>
+      </g>
+    </g>
+  </g>
+</svg>

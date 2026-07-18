@@ -1,0 +1,20 @@
+{
+  "name": "bihua-ai-subscription-guide",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "彼岸花网络维护的 Gemini、ChatGPT、Claude 订阅选择与购买前指南",
+  "homepage": "https://ai-opay.github.io/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ai-opay/ai-opay.github.io.git"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check:links": "node scripts/check-links.mjs",
+    "serve": "node scripts/serve.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
