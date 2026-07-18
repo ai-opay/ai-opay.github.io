@@ -7,19 +7,19 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>__SITE_URL__/guides/gemini.html</loc>
+    <loc>__SITE_URL__/guides/gemini</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>__SITE_URL__/guides/chatgpt.html</loc>
+    <loc>__SITE_URL__/guides/chatgpt</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>__SITE_URL__/guides/claude.html</loc>
+    <loc>__SITE_URL__/guides/claude</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
